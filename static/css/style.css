@@ -1,0 +1,14 @@
+/* NAVBAR */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+/* LOGO */
+.logo {
+    border-radius: 50%;
+    width: 8rem;
+    margin-right: 1rem;
+}
