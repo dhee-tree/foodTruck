@@ -3,9 +3,36 @@
 
 {% block main %}
 <div class="row">
-    <div class="col-md-12">
+    <div class="map-container">
         <h1>Welcome</h1>
+        <p>Find your favorite food truck</p>
+
+        <!-- <p> {{ trucks }}</p> -->
+        
+        <!-- get the truck with the key 20 -->
+        <p> {{ trucks.20 }}</p>
+
+        <!-- get the truck with the key 20 and the second value-->
+        <p> {{ trucks.20.1 }}</p>
+
+
+        <p>{{ trucks|length }}</p>
+
+        <!-- write a for loop to run for 20 times and add the numbers in a p tag-->
+        <!-- {% for i in number_range %}
+            <p>{{ i }}</p>
+        {% endfor %} -->
+
+
+        <div id="map"></div>
     </div>
 </div>
 
+{% endblock %}
+
+{% block js %}
+<!-- prettier-ignore -->
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLtvEiCwghmvwYO2E6IpnEuGPLMg8u_4g&callback=initMap">
+</script>
 {% endblock %}
